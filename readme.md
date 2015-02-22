@@ -1,11 +1,11 @@
 ## Rest Full API
 
 # Сутності:
-    > -  Повідомлення
+    - Повідомлення
     - http://diaryhappi.esy.es/api/v1/message
 
-    > -  Настрій
+    - Настрій
     - http://diaryhappi.esy.es/api/v1/mood
 
-    > - Користувач
+    - Користувач
     - http://diaryhappi.esy.es/api/v1/user
