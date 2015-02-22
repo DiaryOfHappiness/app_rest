@@ -4,8 +4,8 @@
     - Повідомлення
     - http://diaryhappi.esy.es/api/v1/message
 
-    - Повідомлення
+    - Настрій
     - http://diaryhappi.esy.es/api/v1/mood
 
-    - Настрій
+    - Користувач
     - http://diaryhappi.esy.es/api/v1/user
