@@ -55,6 +55,10 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
+//        'session' => [
+//            'name' => 'PHPBACKSESSID',
+//            'savePath' => __DIR__ . '/../tmp',
+//        ],
 
     ],
     'modules' => [

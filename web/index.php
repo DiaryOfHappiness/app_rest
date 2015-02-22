@@ -9,5 +9,13 @@ require(__DIR__ . '/../vendor/yiisoft/yii2/Yii.php');
 
 $config = require(__DIR__ . '/../config/web.php');
 
+function dump($value, $die = true){
+    if($die){
+        var_dump($value);die;
+    } else {
+        var_dump($value);
+    }
+}
+
 
 (new yii\web\Application($config))->run();
