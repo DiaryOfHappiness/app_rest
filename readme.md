@@ -1,6 +1,6 @@
 ## Rest Full API
 
-# Сутності:
+### Сутності:
     - Повідомлення
     - http://diaryhappi.esy.es/api/v1/message
 
