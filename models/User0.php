@@ -2,79 +2,13 @@
 
 namespace app\models;
 
-use Yii;
-
-/**
- * This is the model class for table "user".
- *
- * @property string $ref
- * @property string $name
- * @property integer $id_oauth_type
- *
- * @property Appraisal[] $appraisals
- * @property Note[] $notes
- * @property OauthType $idOauthType
- */
-class User extends \yii\db\ActiveRecord
+class User0 extends \yii\base\Object implements \yii\web\IdentityInterface
 {
-    /**
-     * @inheritdoc
-     */
-    public static function tableName()
-    {
-        return 'user';
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function rules()
-    {
-        return [
-            [['ref', 'name', 'id_oauth_type'], 'required'],
-            [['id_oauth_type'], 'integer'],
-            [['ref'], 'string', 'max' => 60],
-            [['name'], 'string', 'max' => 45]
-        ];
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function attributeLabels()
-    {
-        return [
-            'ref' => 'Ref',
-            'name' => 'Name',
-            'id_oauth_type' => 'Id Oauth Type',
-        ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getAppraisals()
-    {
-        return $this->hasMany(Appraisal::className(), ['ref_user' => 'ref']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getNotes()
-    {
-        return $this->hasMany(Note::className(), ['ref_user' => 'ref']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getIdOauthType()
-    {
-        return $this->hasOne(OauthType::className(), ['id' => 'id_oauth_type']);
-    }
-
-
+    public $id;
+    public $username;
+    public $password;
+    public $authKey;
+    public $accessToken;
 
     private static $users = [
         '100' => [
@@ -169,6 +103,6 @@ class User extends \yii\db\ActiveRecord
 
     static public function getUserId()
     {
-        return 'fgfgfgf';
+        return '1';
     }
 }

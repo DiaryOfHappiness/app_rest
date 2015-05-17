@@ -65,6 +65,9 @@ $config = [
         'api' => [
             'class' => 'app\modules\api\v1\module',
         ],
+        'admin' => [
+            'class' => 'app\modules\admin\admin',
+        ],
     ],
     'params' => $params,
     'extensions' => require(__DIR__ . '/../vendor/yiisoft/extensions.php'),
